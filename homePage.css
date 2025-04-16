@@ -61,11 +61,12 @@ header nav {
 }
 
 header nav a {
+    
     color: #ffffff; /* White text for links */
     text-decoration: none; /* Remove underline from links */
     padding: 10px 20px; /* Padding around links */
     font-size: 18px; /* Font size for links */
-  
+    
 }
 .sec1 {
     display: flex;
