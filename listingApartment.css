@@ -49,10 +49,15 @@ header nav {
     
     display: flex;
     justify-content: space-around;
-  
+    overflow-x: auto;            /* Enables horizontal scrolling */
+    white-space: nowrap;  
 
     
 }
+header nav::-webkit-scrollbar {
+  display: none;               /* Hide scrollbar (Chrome/Safari) */
+}
+
 
 header nav a {
     
