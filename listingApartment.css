@@ -164,12 +164,21 @@ footer .Logo-container{
     width: 100%;
     position: relative;
     margin: auto;
-    Padding-left: 25%;
+    margin-left: 25%;
     padding-top: 5%;
     font-family: 'Kodchasan', sans-serif;
     
 
   }
+  @media (max-width: 800px){
+    .slider-caption {
+      width: 100%;
+      position: relative;
+      font-family: 'Kodchasan', sans-serif;
+      font-size: 24px;
+        
+      }
+    }
   @media (max-width: 800px){
     .sliders-flex-container {
         display: flex;
