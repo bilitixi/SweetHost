@@ -104,12 +104,14 @@ footer .Logo-container{
     overflow: hidden;
     border-radius: 50px;
     
+    
   }
   
   .slider-wrapper {
     display: flex;
     transition: transform 0.5s ease-in-out;
     height: 100%;
+    
 
   }
   
