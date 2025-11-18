@@ -28,6 +28,7 @@ body {
 header {
     background-color: #EE1F22; /* A rich red */
     color: #ffffff; /* White text for contrast */ 
+    padding: 2px;
 }
 .Logo-container{
     display: flex;
@@ -70,6 +71,17 @@ header nav a {
     padding: 10px 20px; /* Padding around links */
     font-size: 18px; /* Font size for links */
     
+}
+.navButton:hover{
+    background-color: #F3EAAC;
+    border-radius: 15%;
+    color: black;
+    
+}
+.appartmentPageNav{
+    background-color: white;
+    border-radius: 15%;
+    color: black;
 }
 footer {
     background-color: #EE1F22; /* A rich red */
