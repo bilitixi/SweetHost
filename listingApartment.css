@@ -327,17 +327,29 @@ footer .footer-links a:hover {
   }
   .apartment-price {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 6px;
     margin: 0;
     padding-top: 12px;
     border-top: 1px solid rgba(43, 35, 32, 0.1);
-    font-weight: 700;
-    font-size: 18px;
+    line-height: 1.4;
     color: var(--brand-red-dark);
   }
   .apartment-price .material-symbols-outlined {
     font-size: 20px;
+    line-height: 1.4;
+    flex-shrink: 0;
+  }
+  .apartment-price .price-label {
+    font-weight: 600;
+    font-size: 14px;
+    opacity: 0.85;
+    display: block;
+  }
+  .apartment-price .price-value {
+    font-weight: 700;
+    font-size: 18px;
+    display: block;
   }
   @media (max-width: 800px){
     .slider-caption {
