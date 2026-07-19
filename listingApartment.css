@@ -116,12 +116,34 @@ header nav a {
     color: var(--brand-red-dark);
 }
 
-/* Page intro */
-.page-intro {
-    max-width: 720px;
-    margin: 6% auto 0;
-    padding: 0 5%;
+/* Page hero */
+.page-hero {
+    position: relative;
+    min-height: 38vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    background-image: url('Apartment Photo/Apartments/M1-1712/pic2.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    overflow: hidden;
+}
+.page-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(43, 23, 20, 0.55) 0%, rgba(43, 23, 20, 0.78) 100%);
+}
+.page-hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 720px;
+    padding: 48px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
 }
 .page-eyebrow {
     display: inline-block;
@@ -129,18 +151,19 @@ header nav a {
     letter-spacing: 2px;
     font-size: 13px;
     font-weight: 700;
-    color: var(--brand-red-dark);
+    color: var(--brand-cream);
 }
-.page-intro h2 {
+.page-hero-content h2 {
     font-family: 'Kodchasan', sans-serif;
-    font-size: clamp(28px, 4vw, 40px);
-    margin: 8px 0 10px;
-    color: var(--text-dark);
-}
-.page-intro p {
+    font-size: clamp(30px, 4.5vw, 46px);
     margin: 0;
-    color: var(--text-muted);
-    font-size: 17px;
+    line-height: 1.2;
+}
+.page-hero-content p {
+    margin: 0;
+    font-size: clamp(15px, 1.8vw, 18px);
+    color: #f4f0e2;
+    max-width: 560px;
 }
 
 footer {
@@ -327,17 +350,29 @@ footer .footer-links a:hover {
   }
   .apartment-price {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 6px;
     margin: 0;
     padding-top: 12px;
     border-top: 1px solid rgba(43, 35, 32, 0.1);
-    font-weight: 700;
-    font-size: 18px;
+    line-height: 1.4;
     color: var(--brand-red-dark);
   }
   .apartment-price .material-symbols-outlined {
     font-size: 20px;
+    line-height: 1.4;
+    flex-shrink: 0;
+  }
+  .apartment-price .price-label {
+    font-weight: 600;
+    font-size: 14px;
+    opacity: 0.85;
+    display: block;
+  }
+  .apartment-price .price-value {
+    font-weight: 700;
+    font-size: 18px;
+    display: block;
   }
   @media (max-width: 800px){
     .slider-caption {
